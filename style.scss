@@ -4,6 +4,7 @@ $primary-red: hsl(0, 78%, 62%);
 $primary-cyan: hsl(180, 62%, 55%);
 $primary-orange: hsl(34, 97%, 64%);
 $primary-blue: hsl(212, 86%, 64%);
+$primary-light-grey:hsl(0, 0%, 98%);
 $font-size: 15px;
 $font-color: #4b4a5c;
 $font-family: Poppins,
@@ -33,7 +34,7 @@ p+p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .fw-sm {
@@ -61,17 +62,18 @@ p+p {
 }
 
 div.cards {
-    margin-top: 40px;
+    margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, auto));
+    grid-template-columns: repeat(3, minmax(250px, 300px));
     grid-template-rows: auto;
     column-gap: 20px;
     row-gap: 20px;
+    justify-content: center;
     grid-template-areas:
         ". team-builder ."
-        "supervisor team-builder karma"
-        "supervisor calculator karma"
-        ". calculator .";
+        "supervisor team-builder calculator"
+        "supervisor karma calculator"
+        ". karma .";
 
     div.card {
         height: 250px;
